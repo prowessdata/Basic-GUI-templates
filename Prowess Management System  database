@@ -1,0 +1,16 @@
+USE master ;  
+GO  
+CREATE DATABASE PMS  
+ON   
+( NAME = PMS_dat,  
+    FILENAME = 'D:\Qt',  
+    SIZE = 10,  
+    MAXSIZE = 50,  
+    FILEGROWTH = 5 )  
+LOG ON  
+( NAME = PMS_log,  
+    FILENAME = 'D:\Qt',  
+    SIZE = 5MB,  
+    MAXSIZE = 100MB,  
+    FILEGROWTH = 10MB ) ;  
+GO  
